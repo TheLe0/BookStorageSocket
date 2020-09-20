@@ -13,8 +13,7 @@ business rules and send to the database and send to the client the response.
 ## REQUIREMENTS ##
 
 ```
-Python 3
-PostgreSQL 12
+PostgreSQL
 ```
 
 ## INSTALLATION ##
@@ -29,32 +28,6 @@ psql -f insert_autor.sql
 psql -f insert_edicao.sql
 psql -f insert_livroautor.sql
 psql -f insert_livrostemp.sql
-```
-
-On the project root create a file called ``` .env ```, like the ```.env-example```. And put your values for the variables, something like this:
-
-```
-HOST=localhost
-DB_USER=my_user
-PASSWORD=my_password
-PORT=5434
-DBNAME=BookStorage
-SERVER_PORT=1027
-IP=127.0.0.1
-```
-
-Inside the project root on the terminal run:
-```
-pip3 install -r requirements.txt
-```
-Start the server:
-```
- python3 server.py
-```
-
-Start the client:
-```
-python3 client.py
 ```
 
 ## ENDPOINTS ##
